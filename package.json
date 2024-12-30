@@ -1,5 +1,5 @@
 {
-  "name": "15-mvc-profiles-app",
+  "name": "vezbanode",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -11,12 +11,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "dayjs": "^1.11.13",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
   },
   "devDependencies": {
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "nodemon": "^3.1.9"
   }
 }

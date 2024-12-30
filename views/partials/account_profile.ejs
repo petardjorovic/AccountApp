@@ -1,0 +1,35 @@
+<div class="row mt-4">
+    <div class="col-3">
+        <div class="row mb-4">
+            <div class="col-8 offset-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                    <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5"/>
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <a href="" class="btn btn-info form-control">Profile info</a><br>
+                <a href="/profile/<%= user.id %>/delete" class="btn btn-danger form-control">Delete</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true"><%= user.profileInfo.occupation %></li>
+                    <li class="list-group-item">Full name: <span class="badge text-bg-warning rounded-pill"><%= user.firstName %> <%= user.lastName %></span></li>
+                    <li class="list-group-item">Deposit: <span class="badge text-bg-danger rounded-pill"><%= user.deposit %></li>
+                    <li class="list-group-item">Credit card: <span class="badge text-bg-info rounded-pill"><%= user.creditCard %></li>
+                    <li class="list-group-item">Age: <span class="badge text-bg-success rounded-pill"><%= user.profileInfo.age %></li>
+                    <li class="list-group-item">Gender: <span class="badge text-bg-secondary rounded-pill"><%= user.profileInfo.gender %></li>
+                    <li class="list-group-item">City: <span class="badge text-bg-secondary rounded-pill"><%= user.profileInfo.city %></li>
+                    <li class="list-group-item">Email: <span class="badge text-bg-secondary rounded-pill"><%= user.profileInfo.email %></li>
+                    <li class="list-group-item">Signed: <span class="badge text-bg-secondary rounded-pill"><%= user.createdAt %></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>

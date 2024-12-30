@@ -1,11 +1,14 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 
-const homeCtrl = (req,res)=>{
-    fs.readFile('./data.json','utf-8', (err,file)=>{
-        res.render('index', { accounts : JSON.parse(file)})
-    })
-}
+const index = async(req,res)=>{
 
+    try {
+        let content = await fs.readFile('./data.json','utf-8');
+        res.render('index', { accounts : JSON.parse(content) });
+    } catch(err) {
+        console.error(err);
+        res.send(err)
+    }
+};
 
-
-module.exports = homeCtrl;
+module.exports = { index };

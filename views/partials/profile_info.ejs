@@ -1,0 +1,29 @@
+<div class="row mt-3">
+    <div class="col-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5"/>
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              </svg>
+              <div class="row mt-3">
+                <div class="col-10">
+                    <a href="" class="btn btn-success mt-2"><%= currentAccount.firstName %> profile</a>
+                    <a href="profile/<%= currentAccount.id %>/delete" class="btn btn-danger mt-2">Delete</a>
+                </div>
+              </div>
+    </div>
+    <div class="col-9">
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+              <%= currentAccount.profileInfo.occupation %>
+            </button>
+            <button type="button" class="list-group-item list-group-item-action">Full name: <span class="badge text-bg-primary rounded-pill"><%= currentAccount.firstName %> <%= currentAccount.lastName %></span></button>
+            <button type="button" class="list-group-item list-group-item-action">Deposit: <span class="badge text-bg-danger rounded-pill"><%= currentAccount.deposit %></span></button>
+            <button type="button" class="list-group-item list-group-item-action">Credit Card: <span class="badge text-bg-info rounded-pill"><%= currentAccount.creditCard %></span></button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Age: <span class="badge text-bg-secondary rounded-pill"><%= currentAccount.profileInfo.age %></span></button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Gender: <span class="badge text-bg-secondary rounded-pill"><%= currentAccount.profileInfo.gender %></span></button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>City: <span class="badge text-bg-secondary rounded-pill"><%= currentAccount.profileInfo.city %></span></button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Email: <span class="badge text-bg-secondary rounded-pill"><%= currentAccount.profileInfo.email %></span></button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Signed: <span class="badge text-bg-secondary rounded-pill"><%= currentAccount.createdAt %></span></button>
+          </div>
+    </div>
+</div>

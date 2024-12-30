@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "deposit": 3750,
+        "creditCard": "MasterCard",
+        "createdAt": "2020-10-01T09:00:00Z",
+        "profileInfo": {
+            "age": 41,
+            "gender": "Male",
+            "occupation": "Web developer",
+            "city": "NY",
+            "email": "john.doe@example.com"
+        }
+    },
+    {
+        "id": 2,
+        "firstName": "Alex",
+        "lastName": "Jackson",
+        "deposit": 13000,
+        "creditCard": "Visa",
+        "createdAt": "2021-01-01T09:00:00Z",
+        "profileInfo": {
+            "age": 26,
+            "gender": "Male",
+            "occupation": "Business Consultant",
+            "city": "London",
+            "email": "alex.jackson@example.com"
+        }
+    },
+    {
+        "id": 3,
+        "firstName": "Alice",
+        "lastName": "Taylor",
+        "deposit": 1000,
+        "creditCard": "MasterCard",
+        "createdAt": "2019-10-01T09:00:00Z",
+        "profileInfo": {
+            "age": 32,
+            "gender": "Female",
+            "occupation": "Designer",
+            "city": "Leeds",
+            "email": "alice.taylor@example.com"
+        }
+    },
+    {
+        "id": 4,
+        "firstName": "Bob",
+        "lastName": "Martinez",
+        "deposit": 3000,
+        "creditCard": "MasterCard",
+        "createdAt": "2020-12-01T09:00:00Z",
+        "profileInfo": {
+            "age": 45,
+            "gender": "Male",
+            "occupation": "Business Consultant",
+            "city": "Miami",
+            "email": "bob.martinez@example.com"
+        }
+    },
+    {
+        "id": 5,
+        "firstName": "Emily",
+        "lastName": "Davis",
+        "deposit": 500,
+        "creditCard": "Visa",
+        "createdAt": "2023-07-19T10:30:00Z",
+        "profileInfo": {
+            "age": 29,
+            "gender": "Female",
+            "occupation": "Teacher",
+            "city": "Seattle",
+            "email": "emily.davis@example.com"
+        }
+    },
+    {
+        "id": 6,
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "deposit": 7500,
+        "creditCard": "Discover",
+        "createdAt": "2021-04-30T15:00:00Z",
+        "profileInfo": {
+            "age": 38,
+            "gender": "Male",
+            "occupation": "Data Scientist",
+            "city": "San Francisco",
+            "email": "michael.brown@example.com"
+        }
+    },
+    {
+        "id": 7,
+        "firstName": "Sarah",
+        "lastName": "Wilson",
+        "deposit": 1800,
+        "creditCard": "Visa",
+        "createdAt": "2022-08-05T13:20:00Z",
+        "profileInfo": {
+            "age": 33,
+            "gender": "Female",
+            "occupation": "Project Manager",
+            "city": "Boston",
+            "email": "sarah.wilson@example.com"
+        }
+    },
+    {
+        "id": 8,
+        "firstName": "David",
+        "lastName": "Taylor",
+        "deposit": 2200,
+        "creditCard": "MasterCard",
+        "createdAt": "2020-11-12T16:10:00Z",
+        "profileInfo": {
+            "age": 41,
+            "gender": "Male",
+            "occupation": "Financial Analyst",
+            "city": "Houston",
+            "email": "david.taylor@example.com"
+        }
+    },
+    {
+        "id": 9,
+        "firstName": "Olivia",
+        "lastName": "Thomas",
+        "deposit": 900,
+        "creditCard": "American Express",
+        "createdAt": "2023-09-18T11:30:00Z",
+        "profileInfo": {
+            "age": 26,
+            "gender": "Female",
+            "occupation": "Nurse",
+            "city": "Denver",
+            "email": "olivia.thomas@example.com"
+        }
+    },
+    {
+        "id": 10,
+        "firstName": "James",
+        "lastName": "Anderson",
+        "deposit": 4000,
+        "creditCard": "Discover",
+        "createdAt": "2024-01-05T17:50:00Z",
+        "profileInfo": {
+            "age": 50,
+            "gender": "Male",
+            "occupation": "Entrepreneur",
+            "city": "Phoenix",
+            "email": "james.anderson@example.com"
+        }
+    }
+]

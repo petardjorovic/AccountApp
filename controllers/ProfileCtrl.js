@@ -1,23 +1,29 @@
-const fs = require('fs');
+const fs = require('fs').promises; 
 
-const index = (req,res)=>{
+const index = async(req,res)=>{
     let id = req.params.account_id;
-    fs.readFile('./data.json','utf-8', (err,file)=>{
-        let arrContent = JSON.parse(file);
-        let currentAccount = arrContent.find(user => user.id == id);
-        res.render('profile', {currentAccount, accounts : arrContent})
-    })
+    try {
+        let currentArr = JSON.parse(await fs.readFile('./data.json', 'utf-8'));
+        let currentAccount = currentArr.find(account => account.id == id);
+        res.render('profile', { accounts : currentArr, user : currentAccount });
+    } catch(err) {
+        console.error(err);
+        res.send(err)
+    }
 }
 
-const deleteProfile = (req,res)=>{
+const deleteAccount = async(req,res)=>{
     let id = req.params.id;
-    fs.readFile('./data.json', 'utf-8', (err,file)=>{
-        let arrContent = JSON.parse(file);
-        let newArr = arrContent.filter(user => user.id != id);
-        fs.writeFile('./data.json', JSON.stringify(newArr), err =>{
-            res.redirect('/');
-        })
-    })
-};
+    try {
+        let currentArr = JSON.parse(await fs.readFile('./data.json', 'utf-8'));
+        let filtered = currentArr.filter(account => account.id != id);
+        await fs.writeFile('./data.json', JSON.stringify(filtered));
+        res.redirect('/');
+    } catch(err) {
+        console.error(err);
+        res.send(err)
+    }
+    
+}
 
-module.exports = { index, deleteProfile };
+module.exports = { index, deleteAccount };
